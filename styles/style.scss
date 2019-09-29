@@ -1,0 +1,72 @@
+$primarycolor1:  hsl(231, 69%, 60%);
+$primarycolor2 :  hsl(0, 94%, 66%);
+$neutralcolor1 : hsl(229, 8%, 60%);
+$neutralcolor2 : hsl(229, 31%, 21%);
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+body {
+    overflow-x: hidden;
+}
+header {
+   
+    width: 80%;
+    margin: 3% 10%;
+    .logo {
+        float: left;
+        width: 20%;
+        padding: 5px;
+    }
+    nav {
+        float: right;
+        width: 60%;
+        ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-evenly;
+            li {
+                padding: 10px;
+                a {
+                    text-decoration: none;
+                }
+                #login-item {
+                    color: #fff;
+                }
+            }
+            #last-child{
+                background-color: $primarycolor2;
+                padding: 10px 35px;
+                border-radius: 7px;
+            }
+        }
+    }
+    .clearfix {
+        clear: both;
+    }
+}
+.hero-sec {
+    display: flex;
+    
+    .hero-img {
+        
+        .shape {
+            background-color: $primarycolor1;
+            height: 50vh;
+            width: 40vw;
+            position: absolute;
+            z-index: 0;
+            top: 40vh;
+            right: -10%;
+            border-radius: 100px;
+            
+        }
+        img {
+            position: relative;
+            z-index: 1;
+            right: 5%;
+        }
+    }
+}
+
