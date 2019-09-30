@@ -157,4 +157,105 @@ header .clearfix {
   text-align: center;
   font-family: 'Rubik', sans-serif;
 }
+
+.tabs {
+  width: 100%;
+}
+
+.tabs .tab-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  margin: auto 25%;
+  border-bottom: 1px solid #aaa;
+}
+
+.tabs .tab-links li {
+  list-style: none;
+}
+
+.tabs .tab-links li a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  border-bottom: 2px solid red;
+}
+
+.tabs .tab-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5%;
+  position: relative;
+}
+
+.tabs .tab-content .tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tabs .tab-content .tab .image-sec {
+  margin-right: 10%;
+}
+
+.tabs .tab-content .tab .image-sec .shape {
+  background-color: #5368df;
+  height: 50vh;
+  width: 45vw;
+  position: absolute;
+  z-index: 0;
+  top: 15vh;
+  border-radius: 100px;
+  left: -10%;
+}
+
+.tabs .tab-content .tab .image-sec img {
+  position: relative;
+  z-index: 1;
+  left: 20%;
+}
+
+.tabs .tab-content .tab .text-sec {
+  padding: 5% 7% 5% 10%;
+}
+
+.tabs .tab-content .tab .text-sec h1 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 900;
+}
+
+.tabs .tab-content .tab .text-sec p {
+  padding-top: 5%;
+  padding-right: 30%;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+.tabs .tab-content .tab .text-sec button {
+  margin-top: 5%;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  padding: 10px 25px;
+  border-radius: 5px;
+  border: none;
+  background-color: #5368df;
+  color: #fff;
+}
+
+.tabs .tab-content #tab-2, .tabs .tab-content #tab-3 {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
