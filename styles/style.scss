@@ -57,7 +57,7 @@ header {
     .text-sec {
         display: flex;
         flex-direction: column;
-        padding: 5% 17% 5% 7%;
+        padding: 5% 7% 5% 10%;
         h1 {
             font-family: 'Rubik', sans-serif;
             font-weight: 900;
@@ -109,3 +109,21 @@ header {
     }
 }
 
+.tab-sec {
+    margin-top: 5%;
+    .text-sec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1 {
+            font-family: 'Rubik', sans-serif; 
+            margin-bottom: 2%;
+        }
+        p {
+            margin: auto 32%;
+            text-align: center;
+            font-family: 'Rubik', sans-serif; 
+        }
+    }
+    
+}

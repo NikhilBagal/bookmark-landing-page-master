@@ -74,7 +74,7 @@ header .clearfix {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 5% 17% 5% 7%;
+  padding: 5% 7% 5% 10%;
 }
 
 .hero-sec .text-sec h1 {
@@ -128,5 +128,33 @@ header .clearfix {
   position: relative;
   z-index: 1;
   right: 5%;
+}
+
+.tab-sec {
+  margin-top: 5%;
+}
+
+.tab-sec .text-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tab-sec .text-sec h1 {
+  font-family: 'Rubik', sans-serif;
+  margin-bottom: 2%;
+}
+
+.tab-sec .text-sec p {
+  margin: auto 32%;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
