@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
 * {
   padding: 0%;
   margin: 0%;
@@ -53,12 +54,63 @@ header nav ul #last-child {
 
 header .clearfix {
   clear: both;
+  margin-bottom: 5%;
 }
 
 .hero-sec {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero-sec .text-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5% 17% 5% 7%;
+}
+
+.hero-sec .text-sec h1 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 900;
+}
+
+.hero-sec .text-sec p {
+  padding-top: 5%;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+}
+
+.hero-sec .text-sec .hero-buttons {
+  padding-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-sec .text-sec .hero-buttons #btn-1 {
+  margin-right: 10%;
+  color: #fff;
+  background-color: #fa5757;
+}
+
+.hero-sec .text-sec .hero-buttons #btn-2 {
+  color: black;
+}
+
+.hero-sec .text-sec .hero-buttons button {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
 }
 
 .hero-sec .hero-img .shape {
@@ -67,7 +119,7 @@ header .clearfix {
   width: 40vw;
   position: absolute;
   z-index: 0;
-  top: 40vh;
+  top: 45vh;
   right: -10%;
   border-radius: 100px;
 }
