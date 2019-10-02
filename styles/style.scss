@@ -145,8 +145,12 @@ header {
                 text-decoration: none;
                 font-family: 'Rubik', sans-serif; 
                 font-weight: 500;
-                border-bottom: 2px solid red;
+                
             }
+            
+        }
+        li.active {
+            border-bottom: 2px solid red;
         }
     }
     .tab-content {
@@ -200,11 +204,11 @@ header {
                 }
             }
         }
-        #tab-1 {
-            
-        }
-        #tab-2,#tab-3{
+        .tab {
             display: none;
+        }
+        .tab.active{
+            display: flex;
         }
     }
     

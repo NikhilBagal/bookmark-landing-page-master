@@ -184,6 +184,9 @@ header .clearfix {
   text-decoration: none;
   font-family: 'Rubik', sans-serif;
   font-weight: 500;
+}
+
+.tabs .tab-links li.active {
   border-bottom: 2px solid red;
 }
 
@@ -255,7 +258,13 @@ header .clearfix {
   color: #fff;
 }
 
-.tabs .tab-content #tab-2, .tabs .tab-content #tab-3 {
+.tabs .tab-content .tab {
   display: none;
+}
+
+.tabs .tab-content .tab.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */
