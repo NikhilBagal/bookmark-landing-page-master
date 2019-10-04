@@ -89,20 +89,20 @@ header {
         }
     }
     .hero-img {
-        
+        position: relative;
         .shape {
             background-color: $primarycolor1;
-            height: 50vh;
-            width: 40vw;
+            height: 80%;
+            width: 100%;
             position: absolute;
-            z-index: 0;
-            top: 45vh;
-            right: -10%;
+            z-index: -1;
+            top: 20%;
+            right: -20%;
             border-radius: 100px;
             
         }
         img {
-            position: relative;
+            
             z-index: 1;
             right: 5%;
         }
@@ -156,22 +156,23 @@ header {
     .tab-content {
         display: flex;
         margin-top: 5%;
-        position: relative;
+       // position: relative;
         .tab {
             display: flex;
             justify-content: space-between;
             align-items: center;
             .image-sec {
                 margin-right: 10%;
+                position: relative;
                 .shape {
                     background-color: $primarycolor1;
-                    height: 50vh;
-                    width: 45vw;
+                    height: 100%;
+                    width: 100%;
                     position: absolute;
                     z-index: 0;
-                    top: 15vh;
+                    top: 20%;
                     border-radius: 100px;
-                    left: -10%;
+                    left: -20%;
                 }
                 img {
                     position: relative;
@@ -213,3 +214,175 @@ header {
     }
     
 }
+.extension-sec {
+    margin-top: 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .text-sec {
+        text-align: center;
+        width: 35%;
+        margin-bottom: 5%;
+        font-family: 'Rubik', sans-serif;
+        h1 {
+            font-weight: 700;
+        }
+        p {
+            margin-top: 3%;
+            font-weight: 300;
+            color: $neutralcolor1;
+        }
+    }
+    .extensions {
+        display: flex;
+        width: 80%;
+        font-family: 'Rubik', sans-serif;
+        justify-content: space-evenly;
+        .chrome {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            -webkit-box-shadow: -1px 10px 10px 0px rgba(186,180,186,0.8);
+            -moz-box-shadow: -1px 10px 10px 0px rgba(186,180,186,0.8);
+            box-shadow: -1px 10px 10px 0px rgba(186,180,186,0.8);
+            width: 27%;
+            height: 100%;
+            padding-bottom: 2%;
+            border-radius: 10px;
+            .logo-text{
+                margin:10% auto;
+                
+                h3 {
+                    font-weight: 700;
+                }
+                p {
+                    font-weight: 300;
+                    color: $neutralcolor1;
+                    font-size: 15px;
+                }
+            }
+            .button-line {
+                img {
+                    margin-bottom: 5%;
+                    width: 90%;
+                }
+                button {
+                    padding: 5% 2%;
+                    width: 80%;
+                    background-color: $primarycolor1;
+                    border: 1px solid #fff;
+                    border-radius: 5px;
+                    font-family: 'Rubik', sans-serif;
+                    font-weight: 500;
+                    color: #fff;
+                    
+                }
+                button:hover {
+                    background-color: #fff;
+                    color: $primarycolor1;
+                    border: 1px solid $primarycolor1;
+                    cursor: pointer;
+                    transition: 0.5s;
+                }
+            }
+        }
+        .firefox {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            -webkit-box-shadow: -1px 10px 10px 0px rgba(186,180,186,0.8);
+            -moz-box-shadow: -1px 10px 10px 0px rgba(186,180,186,0.8);
+            box-shadow: -1px 10px 10px 0px rgba(186,180,186,0.8);
+            width: 27%;
+            margin-top: 4%;
+            height: 100%;
+            padding-bottom: 2%;
+            border-radius: 10px;
+            .logo-text{
+                margin:10% auto;
+                h3 {
+                    font-weight: 700;
+                }
+                p {
+                    font-weight: 300;
+                    color: $neutralcolor1;
+                    font-size: 15px;
+                }
+            }
+            .button-line {
+                img {
+                    margin-bottom: 5%;
+                    width: 90%;
+                }
+                button {
+                    padding: 5% 2%;
+                    width: 80%;
+                    background-color: $primarycolor1;
+                    border: 1px solid #fff;
+                    border-radius: 5px;
+                    font-family: 'Rubik', sans-serif;
+                    font-weight: 500;
+                    color: #fff;
+                    
+                }
+                button:hover {
+                    background-color: #fff;
+                    color: $primarycolor1;
+                    border: 1px solid $primarycolor1;
+                    cursor: pointer;
+                    transition: 0.5s;
+                }
+            }
+        }
+        .opera {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            -webkit-box-shadow: -1px 10px 10px 0px rgba(186,180,186,0.8);
+            -moz-box-shadow: -1px 10px 10px 0px rgba(186,180,186,0.8);
+            box-shadow: -1px 10px 10px 0px rgba(186,180,186,0.8);
+            width: 27%;
+            margin-top: 8%;
+            height: 100%;
+            padding-bottom: 2%;
+            border-radius: 10px;
+            .logo-text{
+                margin:10% auto;
+                h3 {
+                    font-weight: 700;
+                }
+                p {
+                    font-weight: 300;
+                    color: $neutralcolor1;
+                    font-size: 15px;
+                }
+            }
+            .button-line {
+                img {
+                    margin-bottom: 5%;
+                    width: 90%;
+                }
+                button {
+                    padding: 5% 2%;
+                    width: 80%;
+                    background-color: $primarycolor1;
+                    border: 1px solid #fff;
+                    border-radius: 5px;
+                    font-family: 'Rubik', sans-serif;
+                    font-weight: 500;
+                    color: #fff;
+                    
+                }
+                button:hover {
+                    background-color: #fff;
+                    color: $primarycolor1;
+                    border: 1px solid $primarycolor1;
+                    cursor: pointer;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+}
+        
