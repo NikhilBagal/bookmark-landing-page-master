@@ -482,4 +482,95 @@ header .clearfix {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
+.faq-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  margin: 10% 25% auto 25%;
+}
+
+.faq-sec .header-text {
+  text-align: center;
+  margin-bottom: 5%;
+  width: 65%;
+}
+
+.faq-sec .header-text h2 {
+  margin-bottom: 3%;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+}
+
+.faq-sec .header-text p {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  color: #9194a1;
+}
+
+.faq-sec .question-sec {
+  font-family: 'Rubik', sans-serif;
+  width: 70%;
+  margin-bottom: 5%;
+}
+
+.faq-sec .question-sec ul {
+  list-style: none;
+}
+
+.faq-sec .question-sec ul .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #9194a1;
+}
+
+.faq-sec .question-sec ul .list a {
+  text-decoration: none;
+  width: 90%;
+  line-height: 50px;
+  font-weight: 600;
+  color: #252b46;
+}
+
+.faq-sec .question-sec ul .list a:hover {
+  color: #fa5757;
+}
+
+.faq-sec .question-sec ul .list .icon {
+  width: 10%;
+  line-height: 50px;
+}
+
+.faq-sec .question-sec ul .list .icon::before {
+  content: '';
+}
+
+.faq-sec .question-sec ul .list .icon.active::before {
+  content: '';
+}
+
+.faq-sec .question-sec ul .list.active {
+  color: #5368df;
+}
+
+.faq-sec .question-sec ul .list:first-child {
+  border-top: 1px solid #9194a1;
+}
+
+.faq-sec .question-sec ul .para {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */

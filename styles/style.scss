@@ -385,4 +385,72 @@ header {
         }
     }
 }
-        
+.faq-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 10% 25% auto 25%;
+    
+    .header-text {
+        text-align: center;
+        margin-bottom: 5%;
+        width: 65%;
+        h2 {
+            margin-bottom: 3%;
+            font-family: 'Rubik', sans-serif; 
+            font-weight: 700;
+        }
+        p {
+            font-family: 'Rubik', sans-serif;
+            font-weight: 300;
+            color: $neutralcolor1;
+        }
+    }
+    .question-sec {
+        font-family: 'Rubik', sans-serif;
+        width: 70%;
+        margin-bottom: 5%;
+        ul {
+            list-style: none;
+           
+            .list {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                border-bottom: 1px solid $neutralcolor1;
+                
+                a {
+                    text-decoration: none;
+                    width: 90%;
+                    line-height: 50px;
+                    font-weight: 600;
+                    color: $neutralcolor2;
+                }
+                a:hover {
+                    color:$primarycolor2;
+                }
+                .icon {
+                    width: 10%;
+                    line-height: 50px;
+                }
+                .icon::before {
+                    content: ''
+                }
+                .icon.active::before {
+                    content: ''
+                }
+            }
+            .list.active {
+                color: $primarycolor1;
+            }
+            .list:first-child {
+                border-top: 1px solid $neutralcolor1;
+            }
+            .para {
+                display: none;
+            }
+            
+        }
+    }
+}
