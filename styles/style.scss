@@ -435,22 +435,44 @@ header {
                     line-height: 50px;
                 }
                 .icon::before {
-                    content: ''
+                    content: '\f107';
+                    font-family: fontAwesome;
+                    color: $primarycolor1;
+                    font-size: 30px;
                 }
                 .icon.active::before {
-                    content: ''
+                    content: '\f106';
+                    font-family: fontAwesome;
+                    color: $primarycolor2;
                 }
             }
             .list.active {
-                color: $primarycolor1;
+                border : none;
             }
             .list:first-child {
                 border-top: 1px solid $neutralcolor1;
             }
             .para {
                 display: none;
+                color: $neutralcolor1;
+                font-weight: 500;
+                margin-top: 3%;
+                
             }
-            
+            .para.active {
+                display: block;
+                
+            }
         }
+    }
+    button {
+        padding: 2% 4%;
+        border-radius: 5px;
+        border: none;
+        background-color: $primarycolor1;
+        color: #fff;
+        font-weight: 500;
+        text-align: center;
+        font-family: 'Rubik', sans-serif;
     }
 }

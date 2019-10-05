@@ -555,15 +555,20 @@ header .clearfix {
 }
 
 .faq-sec .question-sec ul .list .icon::before {
-  content: '';
+  content: '\f107';
+  font-family: fontAwesome;
+  color: #5368df;
+  font-size: 30px;
 }
 
 .faq-sec .question-sec ul .list .icon.active::before {
-  content: '';
+  content: '\f106';
+  font-family: fontAwesome;
+  color: #fa5757;
 }
 
 .faq-sec .question-sec ul .list.active {
-  color: #5368df;
+  border: none;
 }
 
 .faq-sec .question-sec ul .list:first-child {
@@ -572,5 +577,23 @@ header .clearfix {
 
 .faq-sec .question-sec ul .para {
   display: none;
+  color: #9194a1;
+  font-weight: 500;
+  margin-top: 3%;
+}
+
+.faq-sec .question-sec ul .para.active {
+  display: block;
+}
+
+.faq-sec button {
+  padding: 2% 4%;
+  border-radius: 5px;
+  border: none;
+  background-color: #5368df;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

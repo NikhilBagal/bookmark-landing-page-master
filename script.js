@@ -1,8 +1,9 @@
 window.onload = init;
 function init(){
-  attr();
+  tabattr();
+  faqAttr();
 }
-function attr(){
+function tabattr(){
     var element = document.querySelectorAll('.tabs .tab-links a');
 
     for(var i=0;i<element.length;i++){
@@ -29,4 +30,27 @@ function attr(){
         
     }
     
+}
+
+function faqAttr() {
+  let element = document.querySelectorAll('.faq-sec .question-sec ul .list a');
+  //binding events to question attr
+  for(var i=0;i<element.length;i++){
+    element[i].addEventListener('click', function(e){
+      e.preventDefault();
+      //displaying answers on click
+      let currentAttrValue = this.getAttribute('href');
+      let paraElement = document.querySelector(currentAttrValue);
+      paraElement.classList.toggle('active');
+      //changing icons 
+     let iconElement = this.parentNode.children;
+     for(var i=0;i<iconElement.length;i++){
+       iconElement[i].classList.toggle('active');
+       
+     }
+     //changing list element border
+     let listElement = this.parentNode;
+     listElement.classList.toggle('active');
+    })
+  }
 }
