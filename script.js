@@ -1,9 +1,10 @@
 window.onload = init;
 function init(){
-  tabattr();
+  tabAttr();
   faqAttr();
+  
 }
-function tabattr(){
+function tabAttr(){
     var element = document.querySelectorAll('.tabs .tab-links a');
 
     for(var i=0;i<element.length;i++){
@@ -54,3 +55,4 @@ function faqAttr() {
     })
   }
 }
+

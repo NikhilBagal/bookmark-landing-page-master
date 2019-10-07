@@ -596,4 +596,173 @@ header .clearfix {
   text-align: center;
   font-family: 'Rubik', sans-serif;
 }
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 8%;
+}
+
+footer .mail-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: #5368df;
+  font-family: 'Rubik', sans-serif;
+  padding-bottom: 3%;
+}
+
+footer .mail-sec .text-sec {
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+footer .mail-sec .text-sec p {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  color: #fff;
+  margin: 10% auto 5% auto;
+}
+
+footer .mail-sec .text-sec h2 {
+  color: #fff;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  width: 80%;
+  margin: auto 10%;
+}
+
+footer .mail-sec .input-sec {
+  width: 100%;
+}
+
+footer .mail-sec .input-sec form {
+  width: 40%;
+  margin: auto 30%;
+}
+
+footer .mail-sec .input-sec form .mail-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  float: left;
+  margin: auto 5% auto 18%;
+}
+
+footer .mail-sec .input-sec form .mail-input input {
+  padding: 0.7vw;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+footer .mail-sec .input-sec form .mail-input input:focus {
+  border: 2px solid #fa5757;
+}
+
+footer .mail-sec .input-sec form .mail-input .mail-input-error {
+  visibility: hidden;
+  padding: 0.5vw;
+  background-color: #fa5757;
+  font-style: italic;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+footer .mail-sec .input-sec form .mail-input input:focus:invalid + .mail-input-error {
+  visibility: visible;
+}
+
+footer .mail-sec .input-sec form button {
+  width: 20%;
+  padding: 0.7vw;
+  border: 1px solid #fa5757;
+  border-radius: 5px;
+  background-color: #fa5757;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  color: #fff;
+  font-size: 1vw;
+}
+
+footer .mail-sec .input-sec form button:hover {
+  background-color: #fff;
+  color: #fa5757;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer nav {
+  background-color: #252b46;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px;
+}
+
+footer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-left: 10%;
+  list-style: none;
+  width: 80%;
+}
+
+footer nav ul li {
+  width: 5%;
+  margin: auto 5%;
+}
+
+footer nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+footer nav ul li a:hover {
+  color: #fa5757;
+}
+
+footer nav .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 10%;
+  width: 20%;
+}
+
+footer nav .social-icons a {
+  color: #fff;
+  margin-right: 20%;
+  font-size: 1.3em;
+}
+
+footer nav .social-icons a:hover {
+  color: #fa5757;
+}
 /*# sourceMappingURL=style.css.map */

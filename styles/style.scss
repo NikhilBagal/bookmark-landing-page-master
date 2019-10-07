@@ -476,3 +476,134 @@ header {
         font-family: 'Rubik', sans-serif;
     }
 }
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8%;
+    .mail-sec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: $primarycolor1;
+        font-family: 'Rubik', sans-serif;
+        padding-bottom: 3%;
+        .text-sec {
+            text-align: center;
+            
+            margin-bottom: 2%;
+
+            p {
+                font-family: 'Rubik', sans-serif;
+                font-weight: 300;
+                color: #fff;
+                margin: 10% auto 5% auto;
+            }
+            h2 {
+                color: #fff;
+                font-family: 'Rubik', sans-serif;
+                font-weight: 700;
+                letter-spacing: 1px;
+                width: 80%;
+                margin: auto 10%;
+            }
+        }
+        .input-sec {
+            width: 100%;
+            form {
+                width: 40%;
+                margin: auto 30%;
+                .mail-input {
+                    display: flex;
+                    flex-direction: column;
+                    width: 50%;
+                    float: left;
+                    margin:auto 5% auto 18%;
+
+                    input {
+                        padding: 0.7vw;
+                        border: 2px solid transparent;
+                        border-radius: 5px;
+                    }
+                    input:focus {
+                        border: 2px solid $primarycolor2;
+                    }
+                    .mail-input-error {
+                        visibility:hidden;
+                        padding: 0.5vw;
+                        background-color: $primarycolor2;
+                        font-style: italic;
+                        font-family: 'Rubik', sans-serif;
+                        font-weight: 700;
+                        color: #fff;
+                    }
+                    input:focus:invalid + .mail-input-error {
+                        visibility: visible;
+                    }
+                }
+                button {
+                    width: 20%;
+                    padding: 0.7vw;
+                    border: 1px solid $primarycolor2;
+                    border-radius: 5px;
+                    background-color: $primarycolor2;
+                    font-family: 'Rubik', sans-serif;
+                    font-weight: 600;
+                    color: #fff;
+                    font-size: 1vw;
+                }
+                button:hover {
+                    background-color: #fff;
+                    color: $primarycolor2;
+                    cursor: pointer;
+                    transition: 0.5s;
+                }
+            }
+        }
+            
+            
+        
+    }
+    nav {
+        background-color: $neutralcolor2;
+        width: 100%;
+        display: flex;
+        padding: 20px;
+        ul {
+            display: flex;
+            list-style: none;
+            margin-left: 10%;
+            list-style: none;
+            width: 80%;
+            li {
+                width: 5%;
+                margin: auto 5%;
+
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                    font-family: 'Rubik', sans-serif;
+                    font-weight: 300;
+                    font-size: 1em;
+                }
+                a:hover {
+                    color: $primarycolor2;
+                }
+            }
+        }
+        .social-icons {
+            display: flex;
+            margin-right: 10%;
+            width: 20%;
+            
+            a {
+                color: #fff;
+                margin-right: 20%;
+                font-size: 1.3em;
+            }
+            a:hover {
+                color: $primarycolor2;
+            }
+        }
+    }
+}
