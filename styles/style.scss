@@ -51,6 +51,28 @@ header {
         margin-bottom: 5%;
     }
 }
+@media only screen and (max-width:800px){
+    header {
+        width: 90%;
+        margin: 3% auto;
+
+        nav {
+            width: 70%;
+
+            .logo {
+                padding: 0;
+            }
+            ul {
+                li {
+                    padding: 5px;
+                }
+                #last-child{
+                    padding: 5px 25px;
+                }
+            }
+        }
+    }
+}
 .hero-sec {
     display: flex;
     justify-content: space-between;
@@ -76,7 +98,6 @@ header {
                 background-color: $primarycolor2;
             }
             #btn-2 {
-                
                 color: black;
             }
             button {
@@ -99,16 +120,44 @@ header {
             top: 20%;
             right: -20%;
             border-radius: 100px;
-            
         }
         img {
-            
             z-index: 1;
             right: 5%;
         }
     }
 }
-
+@media only screen and (max-width: 700px){
+    .hero-sec {
+        flex-direction: column-reverse;
+        justify-content: center;
+        .text-sec {
+            text-align: center;
+            h1 {
+                font-size: 20px;
+            }
+            p{
+                font-size: 15px;
+            }
+            .hero-buttons {
+                justify-content: center;
+                button {
+                    padding: 10px;
+                }
+            }
+        }
+        .hero-img {
+            .shape {
+                max-width: 100%;
+                right: -30%;
+            }
+            img {
+                max-width: 100%;
+            }
+           
+        }
+    }
+}
 .tab-sec {
     margin-top: 5%;
     .text-sec {
@@ -213,6 +262,81 @@ header {
         }
     }
     
+}
+@media only screen and (max-width:1000px) and (min-width:700px) {
+    .tabs {
+        .tab-links {
+            width: 80%;
+            margin: auto 10%;
+        }
+        .tab-content {
+            .tab {
+                .image-sec {
+                    .shape {
+                        width: 50vw;
+                        left: -25%;
+                    }
+                    img {
+                        width: 50vw;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:700px){
+    .tab-sec {
+        align-items: none;
+        .text-sec {
+            p {
+                margin: auto 5%;
+                font-size: 15px;
+            }
+        }
+    }
+    .tabs {
+        .tab-links {
+            flex-direction: column;
+            width: 90%;
+            margin: auto 5%;
+            text-align: center;
+            border: none;
+            li {
+                border-bottom: 1px solid #aaa;
+            }
+            
+        }
+        .tab-content {
+            flex-direction: column;
+            margin-top: 20%;
+            .tab {
+                flex-direction: column;
+                .image-sec {
+                    .shape {
+                        max-width: 100%;
+                        left: -30%;
+                    }
+                    img {
+                        max-width: 90%;
+                        left: 10%;
+                    }
+                }
+                .text-sec {
+                    margin-top: 20%;
+                    text-align: center;
+                    h1 {
+                        font-size: 20px;
+                    }
+                    p {
+                        font-size: 15px;
+                        padding: 0%;
+                        margin-top: 5%;
+                    }
+                }
+            }
+
+        }
+    }
 }
 .extension-sec {
     margin-top: 13%;
@@ -476,6 +600,14 @@ header {
         font-family: 'Rubik', sans-serif;
     }
 }
+@media only screen and (max-width:1000px){
+    .faq-sec {
+        .question-sec{
+            width: 100%;
+        }
+    }
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -521,7 +653,7 @@ footer {
                     margin:auto 5% auto 18%;
 
                     input {
-                        padding: 0.7vw;
+                        padding: 4%;
                         border: 2px solid transparent;
                         border-radius: 5px;
                     }
@@ -543,7 +675,7 @@ footer {
                 }
                 button {
                     width: 20%;
-                    padding: 0.7vw;
+                    padding: 2%;
                     border: 1px solid $primarycolor2;
                     border-radius: 5px;
                     background-color: $primarycolor2;
@@ -559,10 +691,7 @@ footer {
                     transition: 0.5s;
                 }
             }
-        }
-            
-            
-        
+        } 
     }
     nav {
         background-color: $neutralcolor2;

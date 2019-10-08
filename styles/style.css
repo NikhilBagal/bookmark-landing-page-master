@@ -57,6 +57,25 @@ header .clearfix {
   margin-bottom: 5%;
 }
 
+@media only screen and (max-width: 800px) {
+  header {
+    width: 90%;
+    margin: 3% auto;
+  }
+  header nav {
+    width: 70%;
+  }
+  header nav .logo {
+    padding: 0;
+  }
+  header nav ul li {
+    padding: 5px;
+  }
+  header nav ul #last-child {
+    padding: 5px 25px;
+  }
+}
+
 .hero-sec {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,6 +150,42 @@ header .clearfix {
 .hero-sec .hero-img img {
   z-index: 1;
   right: 5%;
+}
+
+@media only screen and (max-width: 700px) {
+  .hero-sec {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero-sec .text-sec {
+    text-align: center;
+  }
+  .hero-sec .text-sec h1 {
+    font-size: 20px;
+  }
+  .hero-sec .text-sec p {
+    font-size: 15px;
+  }
+  .hero-sec .text-sec .hero-buttons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .hero-sec .text-sec .hero-buttons button {
+    padding: 10px;
+  }
+  .hero-sec .hero-img .shape {
+    max-width: 100%;
+    right: -30%;
+  }
+  .hero-sec .hero-img img {
+    max-width: 100%;
+  }
 }
 
 .tab-sec {
@@ -269,6 +324,78 @@ header .clearfix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 700px) {
+  .tabs .tab-links {
+    width: 80%;
+    margin: auto 10%;
+  }
+  .tabs .tab-content .tab .image-sec .shape {
+    width: 50vw;
+    left: -25%;
+  }
+  .tabs .tab-content .tab .image-sec img {
+    width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .tab-sec {
+    -webkit-box-align: none;
+        -ms-flex-align: none;
+            align-items: none;
+  }
+  .tab-sec .text-sec p {
+    margin: auto 5%;
+    font-size: 15px;
+  }
+  .tabs .tab-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 90%;
+    margin: auto 5%;
+    text-align: center;
+    border: none;
+  }
+  .tabs .tab-links li {
+    border-bottom: 1px solid #aaa;
+  }
+  .tabs .tab-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20%;
+  }
+  .tabs .tab-content .tab {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tabs .tab-content .tab .image-sec .shape {
+    max-width: 100%;
+    left: -30%;
+  }
+  .tabs .tab-content .tab .image-sec img {
+    max-width: 90%;
+    left: 10%;
+  }
+  .tabs .tab-content .tab .text-sec {
+    margin-top: 20%;
+    text-align: center;
+  }
+  .tabs .tab-content .tab .text-sec h1 {
+    font-size: 20px;
+  }
+  .tabs .tab-content .tab .text-sec p {
+    font-size: 15px;
+    padding: 0%;
+    margin-top: 5%;
+  }
 }
 
 .extension-sec {
@@ -597,6 +724,12 @@ header .clearfix {
   font-family: 'Rubik', sans-serif;
 }
 
+@media only screen and (max-width: 1000px) {
+  .faq-sec .question-sec {
+    width: 100%;
+  }
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -669,7 +802,7 @@ footer .mail-sec .input-sec form .mail-input {
 }
 
 footer .mail-sec .input-sec form .mail-input input {
-  padding: 0.7vw;
+  padding: 4%;
   border: 2px solid transparent;
   border-radius: 5px;
 }
@@ -694,7 +827,7 @@ footer .mail-sec .input-sec form .mail-input input:focus:invalid + .mail-input-e
 
 footer .mail-sec .input-sec form button {
   width: 20%;
-  padding: 0.7vw;
+  padding: 2%;
   border: 1px solid #fa5757;
   border-radius: 5px;
   background-color: #fa5757;
