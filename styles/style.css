@@ -33,6 +33,10 @@ header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -101,6 +105,10 @@ header .clearfix {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -194,6 +202,10 @@ header .clearfix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -338,6 +350,10 @@ header .clearfix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -366,6 +382,10 @@ header .clearfix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-top: 5%;
 }
 
@@ -373,6 +393,10 @@ header .clearfix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -547,6 +571,10 @@ header .clearfix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   width: 80%;
   font-family: 'Rubik', sans-serif;
   -webkit-box-pack: space-evenly;
@@ -622,10 +650,10 @@ header .clearfix {
   -webkit-box-shadow: -1px 10px 10px 0px rgba(186, 180, 186, 0.8);
   box-shadow: -1px 10px 10px 0px rgba(186, 180, 186, 0.8);
   width: 27%;
-  margin-top: 4%;
   height: 100%;
   padding-bottom: 2%;
   border-radius: 10px;
+  margin-top: 4%;
 }
 
 .extension-sec .extensions .firefox .logo-text {
@@ -679,10 +707,10 @@ header .clearfix {
   -webkit-box-shadow: -1px 10px 10px 0px rgba(186, 180, 186, 0.8);
   box-shadow: -1px 10px 10px 0px rgba(186, 180, 186, 0.8);
   width: 27%;
-  margin-top: 8%;
   height: 100%;
   padding-bottom: 2%;
   border-radius: 10px;
+  margin-top: 8%;
 }
 
 .extension-sec .extensions .opera .logo-text {
@@ -1028,6 +1056,10 @@ footer nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   list-style: none;
   margin-left: 10%;
   width: 80%;
@@ -1054,6 +1086,10 @@ footer nav .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   margin-right: 10%;
   width: 20%;
 }

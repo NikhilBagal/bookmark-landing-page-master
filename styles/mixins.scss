@@ -1,0 +1,51 @@
+@mixin flexAlign {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    -webkit-box-shadow: -1px 10px 10px 0px rgba(186,180,186,0.8);
+    -moz-box-shadow: -1px 10px 10px 0px rgba(186,180,186,0.8);
+    box-shadow: -1px 10px 10px 0px rgba(186,180,186,0.8);
+    width: 27%;
+    height: 100%;
+    padding-bottom: 2%;
+    border-radius: 10px;
+}
+@mixin  logoAlign {
+    margin:10% auto;
+    h3 {
+        font-weight: 700;
+        }
+    p {
+        font-weight: 300;
+        color: $neutralcolor1;
+        font-size: 15px;
+        }
+}
+@mixin buttonAlign {
+    img {
+        margin-bottom: 5%;
+        width: 90%;
+    }
+    button {
+        padding: 5% 2%;
+        width: 80%;
+        background-color: $primarycolor1;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 500;
+        color: #fff;
+        
+    }
+    button:hover {
+        background-color: #fff;
+        color: $primarycolor1;
+        border: 1px solid $primarycolor1;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+}
+@mixin  flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
