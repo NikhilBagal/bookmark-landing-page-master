@@ -19,6 +19,9 @@ header {
         float: left;
         width: 20%;
         padding: 5px;
+        img.active {
+            display: none;
+        }
     }
     nav {
         float: right;
@@ -43,6 +46,9 @@ header {
                 padding: 10px 35px;
                 border-radius: 7px;
             }
+        }
+        .social-icons {
+            display: none;
         }
     }
     .clearfix {
@@ -95,9 +101,68 @@ header {
             float: none;
             width: 90%;
             margin: auto 5%;
+            display: none;
             ul {
                 flex-direction: column;
                 text-align: center;
+            }
+        }
+    }
+    header.active {
+        background-color: $neutralcolor2;
+        opacity: .9;
+        position: absolute;
+        z-index: 1;
+        top: 0%;
+        margin: 0%;
+        height: 100vh;
+        display: block;
+        .logo {
+            margin: 10% 10%;
+            img {
+                display: none;
+            }
+            img.active {
+                display: block;
+            }
+            .menu-icons.active::before {
+                color: #fff;
+            }
+        }
+        nav {
+            display: block;
+            ul {
+                li {
+                    border-bottom: 0.5px solid #fff;
+                    a {
+                        color: #fff;
+                    }                   
+                }
+                li:first-child {
+                    border-top: 0.5px solid #fff;
+                }
+                #last-child {
+                    border: 2px solid #fff;
+                    border-radius: 5px;
+                    background-color: transparent;
+                    font-weight: 700;
+                    margin-top: 5%;
+                }
+            }
+            .social-icons {
+                display: block;
+                width: 20%;
+                margin: 40% 40% auto 40%;
+                display: flex;
+                justify-content: space-between;
+                a {
+                    margin: 0%;
+                    color: #fff;
+                    font-size: 1.3em;
+                }
+                a:hover {
+                    color: $primarycolor2;
+                }
             }
         }
     }

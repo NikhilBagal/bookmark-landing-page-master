@@ -2,7 +2,7 @@ window.onload = init;
 function init(){
   tabAttr();
   faqAttr();
-  
+  resNav();
 }
 function tabAttr(){
     var element = document.querySelectorAll('.tabs .tab-links a');
@@ -56,3 +56,11 @@ function faqAttr() {
   }
 }
 
+function resNav(){
+  let element = document.querySelector('.menu-icons');
+  let headerElement = document.querySelector('header');
+  element.addEventListener('click',function(){
+    element.classList.toggle('active');
+    headerElement.classList.toggle('active');
+  })
+}

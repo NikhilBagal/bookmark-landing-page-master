@@ -19,6 +19,10 @@ header .logo {
   padding: 5px;
 }
 
+header .logo img.active {
+  display: none;
+}
+
 header nav {
   float: right;
   width: 60%;
@@ -50,6 +54,10 @@ header nav ul #last-child {
   background-color: #fa5757;
   padding: 10px 35px;
   border-radius: 7px;
+}
+
+header nav .social-icons {
+  display: none;
 }
 
 header .clearfix {
@@ -111,6 +119,7 @@ header .clearfix {
     float: none;
     width: 90%;
     margin: auto 5%;
+    display: none;
   }
   header nav ul {
     -webkit-box-orient: vertical;
@@ -118,6 +127,66 @@ header .clearfix {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
+  }
+  header.active {
+    background-color: #252b46;
+    opacity: .9;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    margin: 0%;
+    height: 100vh;
+    display: block;
+  }
+  header.active .logo {
+    margin: 10% 10%;
+  }
+  header.active .logo img {
+    display: none;
+  }
+  header.active .logo img.active {
+    display: block;
+  }
+  header.active .logo .menu-icons.active::before {
+    color: #fff;
+  }
+  header.active nav {
+    display: block;
+  }
+  header.active nav ul li {
+    border-bottom: 0.5px solid #fff;
+  }
+  header.active nav ul li a {
+    color: #fff;
+  }
+  header.active nav ul li:first-child {
+    border-top: 0.5px solid #fff;
+  }
+  header.active nav ul #last-child {
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    font-weight: 700;
+    margin-top: 5%;
+  }
+  header.active nav .social-icons {
+    display: block;
+    width: 20%;
+    margin: 40% 40% auto 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header.active nav .social-icons a {
+    margin: 0%;
+    color: #fff;
+    font-size: 1.3em;
+  }
+  header.active nav .social-icons a:hover {
+    color: #fa5757;
   }
 }
 
